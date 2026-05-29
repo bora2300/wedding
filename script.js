@@ -28,6 +28,14 @@
     return `${year}년 ${month}월 ${date}일 ${day}요일 ${period} ${h12}시${minuteStr}`;
   }
 
+  function formatDateShort(dateStr) {
+    const d = new Date(`${dateStr}T00:00:00`);
+    const year = d.getFullYear();
+    const month = String(d.getMonth() + 1).padStart(2, '0');
+    const date = String(d.getDate()).padStart(2, '0');
+    return `${year}.${month}.${date}`;
+  }
+
   function getWeddingDateTime() {
     return new Date(`${CONFIG.wedding.date}T${CONFIG.wedding.time}:00+09:00`);
   }
