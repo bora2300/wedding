@@ -29,7 +29,7 @@
   }
 
   function getWeddingDateTime() {
-    return new Date(`${CONFIG.wedding.date}T${CONFIG.wedding.time}:00`);
+    return new Date(`${CONFIG.wedding.date}T${CONFIG.wedding.time}:00+09:00`);
   }
 
   /* ═══════════════════════════════════════════
