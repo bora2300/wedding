@@ -25,7 +25,7 @@
     const period = hours < 12 ? '오전' : '오후';
     const h12 = hours % 12 || 12;
     const minuteStr = minutes > 0 ? ` ${minutes}분` : '';
-    return `${year}년 ${month}월 ${date}일 ${day}요일 ${period} ${h12}시${minuteStr}`
+    return `${year}년 ${month}월 ${date}일 ${day}요일 ${period} ${h12}시${minuteStr}`;
   }
 
   function getWeddingDateTime() {
