@@ -25,15 +25,7 @@
     const period = hours < 12 ? '오전' : '오후';
     const h12 = hours % 12 || 12;
     const minuteStr = minutes > 0 ? ` ${minutes}분` : '';
-    return `${year}년 ${month}월 ${date}일 ${day}요일 ${period} ${h12}시${minuteStr}`;
-  }
-
-  function formatDateShort(dateStr) {
-    const d = new Date(`${dateStr}T00:00:00`);
-    const year = d.getFullYear();
-    const month = String(d.getMonth() + 1).padStart(2, '0');
-    const date = String(d.getDate()).padStart(2, '0');
-    return `${year}.${month}.${date}`;
+    return `${year}년 ${month}월 ${date}일 ${day}요일 ${period} ${h12}시${minuteStr}`
   }
 
   function getWeddingDateTime() {
