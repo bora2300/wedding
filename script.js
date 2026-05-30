@@ -358,7 +358,9 @@
      ═══════════════════════════════════════════ */
 
   function initGallery(galleryImages) {
+    const mainImg = $('#galleryMainImage');
     const grid = $('#galleryGrid');
+    
     const placeholder = grid.querySelector('.loading-placeholder');
     if (placeholder) placeholder.remove();
 
@@ -368,12 +370,24 @@
       return;
     }
 
+    mainImg.src = galleryImages[0];
+    mainImg.addEventListener('click', () => openPhotoModal(galleryImages, 0));
+
     galleryImages.forEach((src, i) => {
       const div = document.createElement('div');
-      div.className = 'gallery__item animate-item';
+      div.className = 'gallery__thumb animate-item';
       div.setAttribute('data-animate', 'scale-in');
       div.innerHTML = `<img src="${src}" alt="갤러리 사진 ${i + 1}" loading="lazy">`;
-      div.addEventListener('click', () => openPhotoModal(galleryImages, i));
+     
+      div.addEventListener('click', () => {
+        mainImg.src =src;
+        mainImg.onclick = () => openPhotoModal(galleryImages, i);
+
+        $$('.gallery__rhumb').forEach(el => el.classList.remove('is-active'));
+        div.classList.add('is-active');
+      });
+
+      if (i === 0) div.classList.add('is-active');
       grid.appendChild(div);
     });
   }
