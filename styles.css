@@ -532,7 +532,7 @@ a {
 }
 
 .hero__venue {
-  font-size: 0.92rem;
+  font-size: 0.85rem;
   font-weight: 500;
   letter-spacing: 1px;
   color: var(--color-gold-light);
@@ -543,7 +543,7 @@ a {
 
 .hero__venue {
   margin-top: 8px;
-  magin-bottom: 30px
+  magin-bottom: 12px
 }
 
 /* ─── Countdown ─── */
