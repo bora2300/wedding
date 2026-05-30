@@ -892,6 +892,10 @@ a {
   margin-bottom: var(--spacing-lg);
 }
 
+.account-subtitle {
+   margin-bottom: 32px;
+}
+
 /* ─── Accordion ─── */
 .accordion {
   max-width: 400px;
