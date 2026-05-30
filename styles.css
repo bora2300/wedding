@@ -484,7 +484,7 @@ a {
   z-index: 2;
   text-align: center;
   color: var(--color-text);
-  padding: 0px var(--spacing-md) 140px;
+  padding: 0px var(--spacing-md) 70px;
   width: 100%;
 }
 
@@ -519,6 +519,20 @@ a {
 }
 
 .hero__date,
+
+.hero__details{
+   badkground: var(--color-bg);
+   text-align: center;
+   padding: 2.5rem var(--spacing-md) 3rem;
+}
+
+.hero__details .hero__date,
+.hero__details .hero__venue {
+   display: blaock;
+   text-align: center;
+   margin: 0 auto;
+}
+
 .hero__venue {
   font-size: 0.92rem;
   font-weight: 500;
@@ -537,13 +551,13 @@ a {
 .countdown {
   position: relative;
   z-index: 2;
-  padding: 40px var(--spacing-lg) var(--spacing-md) calc(0.5rem + var(--safe-bottom));
+  padding: 40px var(--spacing-md) calc(0.5rem + var(--safe-bottom));
   text-align: center;
   color: var(--color-text);
 }
 
 .countdown__label {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
   letter-spacing: 2px;
   color: var(--color-gold-dark);
@@ -567,7 +581,7 @@ a {
 
 .countdown__number {
   font-family: var(--font-display);
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   font-weight: 500;
   line-height: 1;
   letter-spacing: 2px;
