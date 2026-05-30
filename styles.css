@@ -518,17 +518,15 @@ a {
   opacity: 0.6;
 }
 
-.hero__date,
-
 .hero__details{
-   badkground: var(--color-bg);
+   background: var(--color-bg);
    text-align: center;
-   padding: 2.5rem var(--spacing-md) 3rem;
+   padding: 2rem var(--spacing-md) 2.5rem;
 }
 
 .hero__details .hero__date,
 .hero__details .hero__venue {
-   display: blaock;
+   display: black;
    text-align: center;
    margin: 0 auto;
 }
@@ -544,7 +542,7 @@ a {
 }
 
 .hero__venue {
-  margin-top: 40px;
+  margin-top: 8px;
 }
 
 /* ─── Countdown ─── */
