@@ -192,7 +192,7 @@
         return;
       }
 
-      const totalDays = Math.ceil(diff / (1000 * 60 * 60 * 24));
+      const totalDays = Math.floor(diff / (1000 * 60 * 60 * 24));
       labelEl.textContent = `결혼식까지 D-${totalDays}`;
 
       const days = Math.floor(diff / (1000 * 60 * 60 * 24));
