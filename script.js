@@ -392,7 +392,7 @@
 
   function openPhotoModal(images, index) {
     modalImages = images;
-    modalScrollY = window,scrollY;
+    modalScrollY = window.scrollY;
     modalIndex = index;
     showModalImage();
     $('#photoModal').classList.add('is-open');
