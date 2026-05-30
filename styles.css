@@ -1023,10 +1023,10 @@ a {
 }
 
 .account-item__role {
-  font-size: 0.6875rem;
-  font-weight: 300;
-  color: var(--color-text-muted);
-  letter-spacing: 1px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-gold-light);
+  letter-spacing: 0.5px;
 }
 
 .account-item__detail {
