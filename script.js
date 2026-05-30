@@ -371,7 +371,6 @@
     }
 
     mainImg.src = galleryImages[0];
-    mainImg.addEventListener('click', () => openPhotoModal(galleryImages, 0));
 
     galleryImages.forEach((src, i) => {
       const div = document.createElement('div');
@@ -381,7 +380,6 @@
      
       div.addEventListener('click', () => {
         mainImg.src =src;
-        mainImg.onclick = () => openPhotoModal(galleryImages, i);
 
         $$('.gallery__thumb').forEach(el => el.classList.remove('is-active'));
         div.classList.add('is-active');
