@@ -521,7 +521,7 @@ a {
 .hero__details{
    background: var(--color-bg);
    text-align: center;
-   padding: 2rem var(--spacing-md) 2.5rem;
+   padding: 1.4rem var(--spacing-md) 2rem;
 }
 
 .hero__details .hero__date,
@@ -549,7 +549,7 @@ a {
 .countdown {
   position: relative;
   z-index: 2;
-  padding: 40px var(--spacing-md) calc(0.5rem + var(--safe-bottom));
+  padding: 1.6px var(--spacing-md) calc(0.5rem + var(--safe-bottom));
   text-align: center;
   color: var(--color-text);
 }
