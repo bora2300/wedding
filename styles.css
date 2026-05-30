@@ -543,7 +543,7 @@ a {
 
 .hero__venue {
   margin-top: 8px;
-  magin-bottom: 30px
+  magin-bottom: 40px
 }
 
 /* ─── Countdown ─── */
@@ -1355,4 +1355,7 @@ a {
       font-weight: 500;
       opacity: 0.85;
    }
+     .hero__details .hero__venue {
+    margin-bottom: 30px !important;
+  }
 }
