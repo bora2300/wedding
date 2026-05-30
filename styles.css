@@ -877,29 +877,29 @@ a {
 
 .location__venue {
   font-size: 1.0625rem;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 0.25rem;
   letter-spacing: 1px;
   color: var(--color-gold-light);
 }
 
 .location__hall {
-  font-size: 0.875rem;
-  font-weight: 300;
+  font-size: 1rem;
+  font-weight: 500;
   color: var(--color-text-light);
   margin-bottom: var(--spacing-xs);
 }
 
 .location__address {
-  font-size: 0.8125rem;
-  font-weight: 300;
+  font-size: 0.95rem;
+  font-weight: 500;
   color: var(--color-text-muted);
   line-height: 1.6;
 }
 
 .location__tel {
   font-size: 0.8125rem;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--color-text-muted);
   margin-top: 0.25rem;
 }
