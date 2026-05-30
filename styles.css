@@ -511,11 +511,12 @@ a {
 }
 
 .hero__gold-divider {
-  width: 50px;
-  height: 1px;
+  width: 8px;
+  height: 8px;
   margin: 0 auto var(--spacing-md);
   background: var(--gradient-gold);
-  opacity: 0.6;
+  transform: rotate(45deg)
+  opacity: 0.8;
 }
 
 .hero__details{
