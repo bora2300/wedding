@@ -507,7 +507,6 @@ a {
   margin-bottom: var(--spacing-sm);
   line-height: 1.4;
   color: var(--color-white);
-
   text-shadow: 0 2px 8px rgba(0,0,0,0.45);
 }
 
@@ -544,11 +543,11 @@ a {
 }
 
 .countdown__label {
-  font-size: 0.75rem;
-  font-weight: 300;
-  letter-spacing: 3px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
   color: var(--color-gold-dark);
-  opacity: 0.7;
+  opacity: 1;
   margin-bottom: var(--spacing-sm);
 }
 
@@ -568,8 +567,8 @@ a {
 
 .countdown__number {
   font-family: var(--font-display);
-  font-size: 2rem;
-  font-weight: 300;
+  font-size: 2.4rem;
+  font-weight: 500;
   line-height: 1;
   letter-spacing: 2px;
   color: var(--color-gold-light);
@@ -577,8 +576,8 @@ a {
 
 .countdown__unit {
   font-family: var(--font-display);
-  font-size: 0.5625rem;
-  font-weight: 400;
+  font-size: 0.7rem;
+  font-weight: 500;
   letter-spacing: 3px;
   color: var(--color-gold-dark);
   opacity: 0.5;
