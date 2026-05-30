@@ -484,7 +484,7 @@ a {
   z-index: 2;
   text-align: center;
   color: var(--color-text);
-  padding: 0px var(--spacing-md) 120px;
+  padding: 0px var(--spacing-md) 90px;
   width: 100%;
 }
 
@@ -537,7 +537,7 @@ a {
 .countdown {
   position: relative;
   z-index: 2;
-  padding: var(--spacing-lg) var(--spacing-md) calc(var(--spacing-lg) + var(--safe-bottom));
+  padding: var(--spacing-lg) var(--spacing-md) calc(1.5rem + var(--safe-bottom));
   text-align: center;
   color: var(--color-text);
 }
