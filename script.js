@@ -165,7 +165,7 @@
 
   function initHero() {
     $('#heroPhoto').src = 'images/hero/1.jpg';
-    $('#heroNames').textContent = `${CONFIG.groom.name}  ♡  ${CONFIG.bride.name}`;
+    $('#heroNames').textContent = `${CONFIG.groom.name}  ·  ${CONFIG.bride.name}`;
     $('#heroDate').textContent = formatDate(CONFIG.wedding.date, CONFIG.wedding.time); 
     $('#heroVenue').textContent = `${CONFIG.wedding.venue} · ${CONFIG.wedding.hall}`;
   }
