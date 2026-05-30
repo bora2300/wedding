@@ -812,8 +812,8 @@ a {
 
 .gallery__main img {
   width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
+  max-height: 520px;
+  object-fit: contain;
   cursor: pointer;
 }
 
