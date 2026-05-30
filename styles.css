@@ -516,7 +516,6 @@ a {
   margin: 0 auto var(--spacing-md);
   background: var(--gradient-gold);
   transform: rotate(45deg)
-  opacity: 0.8;
 }
 
 .hero__details{
