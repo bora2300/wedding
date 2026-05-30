@@ -383,7 +383,7 @@
         mainImg.src =src;
         mainImg.onclick = () => openPhotoModal(galleryImages, i);
 
-        $$('.gallery__rhumb').forEach(el => el.classList.remove('is-active'));
+        $$('.gallery__thumb').forEach(el => el.classList.remove('is-active'));
         div.classList.add('is-active');
       });
 
