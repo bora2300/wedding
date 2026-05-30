@@ -502,11 +502,13 @@ a {
 .hero__names {
   font-family: var(--font-serif);
   font-size: 2rem;
-  font-weight: 200;
+  font-weight: 400;
   letter-spacing: 8px;
   margin-bottom: var(--spacing-sm);
   line-height: 1.4;
   color: var(--color-white);
+
+   text-shadow: 0 2px 8px rgba(0,0,0,0.45);
 }
 
 .hero__gold-divider {
@@ -520,7 +522,7 @@ a {
 .hero__date,
 .hero__venue {
   font-size: 0.8125rem;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 2px;
   color: var(--color-gold-light);
   opacity: 0.85;
