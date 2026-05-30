@@ -778,17 +778,17 @@ a {
 }
 
 .gallery__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3px;
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 8px;
 }
 
 .gallery__item {
-  position: relative;
-  aspect-ratio: 1;
-  overflow: hidden;
-  cursor: pointer;
-  border-radius: 2px;
+  flex: 0 0 85%;
+  scroll-snap-align: center;
+  border-radius: 8px;
 }
 
 .gallery__item img {
