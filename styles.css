@@ -697,8 +697,8 @@ a {
 .calendar__day {
   text-align: center;
   padding: 0.5rem 0;
-  font-size: 0.8125rem;
-  font-weight: 300;
+  font-size: 1rem;
+  font-weight: 500;
   color: var(--color-text-light);
   position: relative;
 }
@@ -716,7 +716,8 @@ a {
 }
 
 .calendar__day.is-today {
-  font-weight: 700;
+  font-weight: 800;
+  font-size: 1.05rem;
   color: var(--color-bg);
   background: var(--gradient-gold);
   border-radius: 50%;
