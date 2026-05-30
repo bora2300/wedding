@@ -484,7 +484,7 @@ a {
   z-index: 2;
   text-align: center;
   color: var(--color-text);
-  padding: 0px var(--spacing-md) 32vh;
+  padding: 0px var(--spacing-md) 180px;
   width: 100%;
 }
 
