@@ -841,7 +841,8 @@ a {
 
 .gallery__thumb.is-active {
   opacity: 1;
-  border-color: var(--color-gold);
+  border: 2px solid var(--color-gold);
+  box-shadow: 0 0 0 2px rgba(212, 165, 116, 0.35);
 }
 
 .gallery__thumb img {
