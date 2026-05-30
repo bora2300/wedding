@@ -384,6 +384,7 @@
 
   let modalImages = [];
   let modalIndex = 0;
+  let modalScrollY = 0;
   let touchStartX = 0;
   let touchEndX = 0;
   let touchStartY = 0;
@@ -391,6 +392,7 @@
 
   function openPhotoModal(images, index) {
     modalImages = images;
+    modalScrollY = window,scrollY;
     modalIndex = index;
     showModalImage();
     $('#photoModal').classList.add('is-open');
@@ -400,6 +402,10 @@
   function closePhotoModal() {
     $('#photoModal').classList.remove('is-open');
     document.body.classList.remove('no-scroll');
+
+    setTimeout(() => {
+      window.scrollTo(0, modalScrollY);
+    }, 0);
   }
 
   function showModalImage() {
