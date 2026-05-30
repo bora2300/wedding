@@ -508,7 +508,7 @@ a {
   line-height: 1.4;
   color: var(--color-white);
 
-   text-shadow: 0 2px 8px rgba(0,0,0,0.45);
+  text-shadow: 0 2px 8px rgba(0,0,0,0.45);
 }
 
 .hero__gold-divider {
@@ -521,12 +521,13 @@ a {
 
 .hero__date,
 .hero__venue {
-  font-size: 0.8125rem;
-  font-weight: 400;
-  letter-spacing: 2px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  letter-spacing: 1px;
   color: var(--color-gold-light);
-  opacity: 0.85;
-  line-height: 1.6;
+  opacity: 0.95;
+  line-height: 1.7;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.35);
 }
 
 .hero__venue {
