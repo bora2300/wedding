@@ -983,8 +983,8 @@ a {
 }
 
 .account-item__detail {
-  font-size: 0.8125rem;
-  font-weight: 300;
+  font-size: 1.15rem;
+  font-weight: 600;
   color: var(--color-text-light);
   margin-top: 0.125rem;
 }
