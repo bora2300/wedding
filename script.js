@@ -134,8 +134,6 @@
      ═══════════════════════════════════════════ */
 
   function initCurtain() {
-    alert('커튼실행');
-    consol.log(writingEl);
     const curtain = $('#curtain');
 
     // If useCurtain is false, skip the curtain entirely
