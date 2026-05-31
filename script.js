@@ -143,7 +143,7 @@
     }
 
     const writingEl = $('#curtainWriting');
-    const writingText = '허도재 ♡ 윤보라\n 결혼합니다';
+    const writingText = '허도재 ♡ 윤보라\n결혼합니다';
 
     let i = 0;
 
@@ -151,7 +151,7 @@
       if (i < writingText.length) {
         writingEl.textContent += writingText.charAt(i);
         i++;
-        setTimout(writeCurtainText, 130);
+        setTimeout(writeCurtainText, 130);
       } else {
         setTimeout(() => {
           curtain.classList.add('is-open');
