@@ -137,7 +137,7 @@
     const curtain = $('#curtain');
 
     // If useCurtain is false, skip the curtain entirely
-    if (CONFIG.useCurtain === false) {
+    if (CONFIG.useCurtain === true) {
       curtain.style.display = 'none';
       return;
     }
