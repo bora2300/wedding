@@ -1390,13 +1390,13 @@ body {
 .curtain__writing::after {
    content: "|";
    margin-left: 4px;
-   animation: bling 0.8s infinite;
+   animation: blink 0.8s infinite;
 }
 
 .curtain.is-open .curtain__writing::after {
-   content: "|";
+   content: "";
 }
 
-@keyframes bling {
+@keyframes blink {
    50% {opacity: 0; }
 }
