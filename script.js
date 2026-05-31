@@ -135,9 +135,6 @@
 
   function initCurtain() {
     const curtain = $('#curtain');
-    const btn = $('#curtainBtn');
-    const namesEl = $('#curtainNames');
-    const dateEl = $('#curtainDate');
 
     // If useCurtain is false, skip the curtain entirely
     if (CONFIG.useCurtain === false) {
@@ -145,16 +142,29 @@
       return;
     }
 
-    namesEl.textContent = `${CONFIG.groom.name}  &  ${CONFIG.bride.name}`;
-    dateEl.textContent = formatDateShort(CONFIG.wedding.date);
+    const writingEl = $('#curtainWriting');
+    const writingText = '허도재 윤보라\n 결혼합니다';
 
-    btn.addEventListener('click', () => {
-      curtain.classList.add('is-open');
-      document.body.classList.remove('no-scroll');
-      setTimeout(() => {
-        curtain.classList.add('is-hidden');
-      }, 5500);
-    });
+    let i = 0;
+
+    function writeCurtainText() {
+      if (i < writingText.length) {
+        writingEl.textContent += writingText.charAt(i);
+        i++;
+        setTimout(writeCurtainText, 130);
+      } else {
+        setTimeout(() => {
+          curtain.classList.add('is-open');
+          document.body.classList.remove('no-scroll');
+
+          setTimeout(() => {
+            curtain.classList.add('is-hidden');
+          },3500);
+        },700);
+      }
+    }
+
+    setTimeout(writeCurtainText, 700);
 
     document.body.classList.add('no-scroll');
   }
