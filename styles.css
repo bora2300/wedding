@@ -1378,12 +1378,12 @@ body {
    position: relative;
    z-index: 3;
    font-family: var(--font-serif);
-   font-size: 1rem;
+   font-size: 1.1rem;
    font-weight: 300;
    letter-spacing: 0px;
    color: var(--color-gold);
    white-space: pre-line;
-   line-height: 2.4;
+   line-height: 2.2;
    text-align: center;
 }
 
