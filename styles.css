@@ -1373,3 +1373,30 @@ body {
    overflow-x: hidden;
    width: 100%;
 }
+
+.curtain__writing {
+   position: relative;
+   z-index: 3;
+   font-family: var(--font-serif);
+   font-size: 2rem;
+   font-weight: 300;
+   letter-spacing: 3px;
+   color: var(--color-gold);
+   white-space: pre-line;
+   line-height: 1.8;
+   text-align: center;
+}
+
+.curtain__writing::after {
+   content: "|";
+   margin-left: 4px;
+   animation: bling 0.8s infinite;
+}
+
+.curtain.is-open .curtain__writing::after {
+   content: "|";
+}
+
+@keyframes bling {
+   50% {opacity: 0; }
+}
