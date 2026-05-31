@@ -143,7 +143,7 @@
     }
 
     const writingEl = $('#curtainWriting');
-    const writingText = '허순강 · 양연순의 아들 허도재\n윤경용 · 송경희의 딸 윤보라\n\n결혼합니다.';
+    const writingText = '허순강 · 양연순의 아들 허도재\n윤경용 · 송경희의 딸 윤보라\n\n2027년1월16일 결혼합니다.';
 
     let i = 0;
 
