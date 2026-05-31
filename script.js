@@ -153,7 +153,7 @@
       document.body.classList.remove('no-scroll');
       setTimeout(() => {
         curtain.classList.add('is-hidden');
-      }, 1400);
+      }, 3000);
     });
 
     document.body.classList.add('no-scroll');
