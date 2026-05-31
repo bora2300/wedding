@@ -143,7 +143,7 @@
     }
 
     const writingEl = $('#curtainWriting');
-    const writingText = '허도재 ♡ 윤보라\n결혼합니다';
+    const writingText = '허순강 · 양연순의 아들 허도재\n윤경용 · 송경희의 딸 윤보라\n\n결혼합니다.';
 
     let i = 0;
 
@@ -151,7 +151,7 @@
       if (i < writingText.length) {
         writingEl.textContent += writingText.charAt(i);
         i++;
-        setTimeout(writeCurtainText, 130);
+        setTimeout(writeCurtainText, 90);
       } else {
         setTimeout(() => {
           curtain.classList.add('is-open');
