@@ -143,7 +143,7 @@
     }
 
     const writingEl = $('#curtainWriting');
-    const writingText = '허도재 윤보라\n 결혼합니다';
+    const writingText = '허도재 ♡ 윤보라\n 결혼합니다';
 
     let i = 0;
 
