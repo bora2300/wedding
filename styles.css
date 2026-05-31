@@ -181,8 +181,14 @@ a {
 .curtain__bg {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, #0d0d1a 0%, #1a1a2e 50%, #0d0d1a 100%);
-  transition: opacity 1.2s cubic-bezier(0.77, 0, 0.18, 1);
+  background: 
+     radial-gradient(
+     circle at center,
+     #0d0d1a 0%, 
+     #1a1a2e 50%, 
+     #0d0d1a 100%
+  );
+  transition: opacity 2.5s cubic-bezier(0.77, 0, 0.18, 1);
 }
 
 .curtain.is-open .curtain__bg {
@@ -203,7 +209,9 @@ a {
   z-index: 1;
   text-align: center;
   color: var(--color-text);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: 
+  opacity 1.8s ease, 
+  transform 1.8s ease;
   padding: var(--spacing-lg);
 }
 
