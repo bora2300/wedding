@@ -151,7 +151,7 @@
       if (i < writingText.length) {
         writingEl.textContent += writingText.charAt(i);
         i++;
-        setTimeout(writeCurtainText, 90);
+        setTimeout(writeCurtainText, 120);
       } else {
         setTimeout(() => {
           curtain.classList.add('is-open');
@@ -159,7 +159,7 @@
 
           setTimeout(() => {
             curtain.classList.add('is-hidden');
-          },3500);
+          },6500);
         },700);
       }
     }
