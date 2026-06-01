@@ -638,18 +638,16 @@
     mutObs.observe(document.body, { childList: true, subtree: true });
   }
 
-  function unlockBgmOnce() {
+   function unlockBgmOnce() {
   const bgm = document.getElementById('bgm');
   if (!bgm) return;
 
   const playBgm = () => {
     bgm.play().catch(() => {});
-    document.removeEventListener('click', playBgm);
-    document.removeEventListener('touchstart', playBgm);
   };
 
-  document.addEventListener('click', playBgm);
-  document.addEventListener('touchstart', playBgm);
+  document.addEventListener('touchend', playBgm, { once: true });
+  document.addEventListener('click', playBgm, { once: true });
 }
   
   /* ═══════════════════════════════════════════
