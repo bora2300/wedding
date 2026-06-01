@@ -650,6 +650,8 @@
     initGreeting();
     initCalendar();
 
+    unlockBgmOnce();
+
     // Show loading placeholders while detecting images
     showLoadingPlaceholders();
 
@@ -680,4 +682,18 @@
   } else {
     init();
   }
+
+  function unlockBgmOnce() {
+  const bgm = document.getElementById('bgm');
+  if (!bgm) return;
+
+  const playBgm = () => {
+    bgm.play().catch(() => {});
+    document.removeEventListener('click', playBgm);
+    document.removeEventListener('touchstart', playBgm);
+  };
+
+  document.addEventListener('click', playBgm);
+  document.addEventListener('touchstart', playBgm);
+}
 })();
