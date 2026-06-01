@@ -143,7 +143,7 @@
     }
 
     const writingEl = $('#curtainWriting');
-    const writingText = '허순강 · 양연순의 아들 허도재\n\n윤경용 · 송경희의 딸 윤보라\n\n2027년 1월 16일\n혼인의 예를 올립니다';
+    const writingText = '허순강 · 양연순의 장남 허도재\n\n윤경용 · 송경희의 장녀 윤보라\n\n2027년 1월 16일\n혼인의 예를 올립니다';
 
     let i = 0;
 
@@ -241,12 +241,12 @@
       <div class="parent-row">
         ${parentLine(g.father, g.mother, g.fatherDeceased, g.motherDeceased)}
         <span class="parent-dot">&#9670;</span>
-        의 아들 <span class="child-name">${g.name}</span>
+        의 장남 <span class="child-name">${g.name}</span>
       </div>
       <div class="parent-row">
         ${parentLine(b.father, b.mother, b.fatherDeceased, b.motherDeceased)}
         <span class="parent-dot">&#9670;</span>
-        의 딸 <span class="child-name">${b.name}</span>
+        의 장녀 <span class="child-name">${b.name}</span>
       </div>
     `;
 
