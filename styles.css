@@ -829,13 +829,16 @@ a {
   border-radius: var(--radius-md);
   overflow: hidden;
   border: 1px solid var(--color-border);
+  min-height: 480px;
 }
 
 .gallery__main img {
   width: 100%;
-  max-height: 520px;
+  max-height: 560px;
   object-fit: contain;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
 }
 
 .gallery__thumbs {
