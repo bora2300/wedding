@@ -147,6 +147,10 @@
 
     writingEl.textContent = writingText;
 
+   setTimeout(() => {
+     writingEl.classList.add('fade-out');
+   }, 2500);
+     
     setTimeout(() => {
       curtain.classList.add('is-open');
       document.body.classList.remove('no-scroll');
