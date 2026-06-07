@@ -143,7 +143,7 @@
     }
 
     const writingEl = $('#curtainWriting');
-    const writingText = '허순강 · 양연순의 장남 허도재\n\n윤경용 · 송경희의 장녀 윤보라\n\n2027년 1월 16일\n혼인의 예를 올립니다';
+    const writingText = '허도재 · 윤보라\n\n2027년 1월 16일\n혼인의 예를 올립니다';
 
     let i = 0;
 
@@ -151,7 +151,7 @@
       if (i < writingText.length) {
         writingEl.textContent += writingText.charAt(i);
         i++;
-        setTimeout(writeCurtainText, 120);
+        setTimeout(writeCurtainText, 90);
       } else {
         setTimeout(() => {
           curtain.classList.add('is-open');
