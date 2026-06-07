@@ -145,26 +145,16 @@
     const writingEl = $('#curtainWriting');
     const writingText = '허도재 · 윤보라\n\n2027년 1월 16일\n혼인의 예를 올립니다';
 
-    let i = 0;
+    writingEl.textContent = writingText;
 
-    function writeCurtainText() {
-      if (i < writingText.length) {
-        writingEl.textContent += writingText.charAt(i);
-        i++;
-        setTimeout(writeCurtainText, 70);
-      } else {
-        setTimeout(() => {
-          curtain.classList.add('is-open');
-          document.body.classList.remove('no-scroll');
+    setTimeout(() => {
+      curtain.classList.add('is-open');
+      document.body.classList.remove('no-scroll');
 
-          setTimeout(() => {
-            curtain.classList.add('is-hidden');
-          },6500);
-        },700);
-      }
-    }
-
-    setTimeout(writeCurtainText, 700);
+      setTimeout(() => {
+        curtain.classList.add('is-hidden');
+      }, 6500);
+    }, 2500);
 
     document.body.classList.add('no-scroll');
   }
