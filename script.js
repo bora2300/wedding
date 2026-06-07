@@ -151,7 +151,7 @@
       if (i < writingText.length) {
         writingEl.textContent += writingText.charAt(i);
         i++;
-        setTimeout(writeCurtainText, 90);
+        setTimeout(writeCurtainText, 70);
       } else {
         setTimeout(() => {
           curtain.classList.add('is-open');
