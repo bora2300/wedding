@@ -149,7 +149,7 @@
 
    setTimeout(() => {
      writingEl.classList.add('fade-out');
-   }, 2500);
+   }, 2000);
      
     setTimeout(() => {
       curtain.classList.add('is-open');
@@ -157,8 +157,8 @@
 
       setTimeout(() => {
         curtain.classList.add('is-hidden');
-      }, 6500);
-    }, 2500);
+      }, 4000);
+    }, 2000);
 
     document.body.classList.add('no-scroll');
   }
