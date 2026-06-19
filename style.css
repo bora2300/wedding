@@ -778,7 +778,7 @@ body {
     max-width: none;
     margin: 0 auto;
     align-items: center;
-    transform: translateY(100px);
+    transform: translateY(100px) !important;
     position: relative;
     left: -12px;
   }
@@ -786,29 +786,33 @@ body {
   .envelope {
     margin: 0 auto;
   }
-}
 
-@media (max-width: 480px) {
   .envelope .letter-sheet {
     width: calc(100% - 40px) !important;
     left: 50% !important;
     right: auto !important;
     transform: translateX(-50%) !important;
     height: 240px !important;
-    top: 18px;
+    top: 30px;
   }
-}
-
-@media (max-width: 480px) {
-
+   
   .card-names {
     font-size: 18px;
   }
 
   .card-bottom {
     font-size: 10px;
+    margin-top: -8px;
   }
 
+@keyframes sheetSlideUp {
+   from {
+      top: 30px;
+   }
+   to {
+      top: -110px
+   }
+}
 }
 
 #intro-overlay.loading .envelope-wrapper {
@@ -835,14 +839,3 @@ body {
   }
 }
 
-.envelope-wrapper {
-  transform: translateY(60px) !important;
-  position: relative;
-  left: 0px;
-}
-
-@media (max-width: 480px) {
-  .card-bottom {
-    margin-top: -8px;
-  }
-}
