@@ -634,10 +634,10 @@ body {
 }
 @keyframes sheetSlideUp {
   from {
-    top: 15px;
+    top: 0px;
   }
   to {
-    top: -110px;
+    top: -140px;
   }
 }
 @keyframes textFadeIn {
