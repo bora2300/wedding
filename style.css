@@ -850,3 +850,17 @@ body {
     );
   }
 }
+
+@media (max-width: 480px) {
+
+  @keyframes sheetSlideUp {
+    from {
+      top: 0px;
+    }
+
+    to {
+      top: -120px;
+    }
+  }
+
+}
