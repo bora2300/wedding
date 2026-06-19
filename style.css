@@ -780,7 +780,7 @@ body {
     align-items: center;
     transform: translateY(100px) !important;
     position: relative;
-    left: -12px;
+    left: 0px;
   }
 
   .envelope {
@@ -793,7 +793,7 @@ body {
     right: auto !important;
     transform: translateX(-50%) !important;
     height: 240px !important;
-    top: 30px;
+    top: 45px;
   }
    
   .card-names {
@@ -807,7 +807,7 @@ body {
 
 @keyframes sheetSlideUp {
    from {
-      top: 30px;
+      top: 45px;
    }
    to {
       top: -110px
