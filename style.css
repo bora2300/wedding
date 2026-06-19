@@ -802,7 +802,7 @@ body {
 @media (max-width: 480px) {
 
   .card-names {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .card-bottom {
@@ -841,3 +841,8 @@ body {
   left: 0px;
 }
 
+@media (max-width: 480px) {
+  .card-bottom {
+    margin-top: -8px;
+  }
+}
