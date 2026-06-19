@@ -749,7 +749,7 @@ body {
   font-size: 9px;
   letter-spacing: 1px;
   color: #6b6358;
-  margin-top: 6px;
+  margin-top: 2px;
 }
 
 @media (max-width: 480px) {
@@ -793,7 +793,7 @@ body {
     right: auto !important;
     transform: translateX(-50%) !important;
     height: 240px !important;
-    top: 45px;
+    top: 30px;
   }
    
   .card-names {
