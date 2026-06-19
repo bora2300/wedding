@@ -79,7 +79,7 @@ body {
 .envelope {
   position: relative;
   width: 270px;
-  height: 287px;
+  height: 320px;
   background-color: #f1ece2;
   border-radius: 0 0 4px 4px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
@@ -839,3 +839,14 @@ body {
   }
 }
 
+@media (max-width: 480px) {
+  .envelope::after {
+    clip-path: polygon(
+      0 12%,
+      50% 50%,
+      100% 12%,
+      100% 100%,
+      0 100%
+    );
+  }
+}
