@@ -634,7 +634,7 @@ body {
 }
 @keyframes sheetSlideUp {
   from {
-    top: 0px;
+    top: -20px;
   }
   to {
     top: -140px;
