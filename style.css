@@ -191,14 +191,14 @@ body {
 }
 .main-names {
   font-size: 1.85rem;
-  font-weight: 400;
+  font-weight: 500;
   color: #1a2321;
   letter-spacing: 2px;
   margin-bottom: 15px;
 }
 .main-date-place {
   font-size: 0.85rem;
-  font-weight: 400;
+  font-weight: 500;
   color: #706b5f;
   letter-spacing: 0.5px;
 }
