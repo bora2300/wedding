@@ -183,14 +183,14 @@ body {
   margin-bottom: 40px;
 }
 .wedding-title {
-  font-size: 0.75rem;
+  font-size: 0.5rem;
   letter-spacing: 5px;
   color: #8c826e;
   display: inline-block;
   margin-bottom: 15px;
 }
 .main-names {
-  font-size: 1.75rem;
+  font-size: 1.85rem;
   font-weight: 300;
   color: #1a2321;
   letter-spacing: 2px;
@@ -227,7 +227,7 @@ body {
   border-bottom: 1px solid #eeebe3;
 }
 .section-sub {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   letter-spacing: 3.5px;
   color: #8c826e;
   margin-bottom: 12px;
@@ -288,7 +288,7 @@ body {
   font-variant-numeric: tabular-nums;
 }
 .time-box label {
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   color: #a19c91;
   letter-spacing: 1px;
   margin-top: 4px;
@@ -307,7 +307,7 @@ body {
   margin: 25px 0;
 }
 .invitation-text {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 .family-relations {
   margin-top: 50px;
@@ -348,7 +348,7 @@ body {
   grid-template-columns: repeat(7, 14.28%);
   row-gap: 15px;
   text-align: center;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 .headers {
   font-weight: 500;
@@ -417,7 +417,7 @@ body {
 }
 .gallery-notice {
   margin-top: 20px;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   color: #9c978e;
 }
 /* 갤러리 확대 팝업 */
@@ -442,7 +442,7 @@ body {
   top: 20px;
   right: 25px;
   color: #ffffff;
-  font-size: 40px;
+  font-size: 45px;
   font-weight: bold;
   cursor: pointer;
 }
@@ -527,7 +527,7 @@ body {
   border-bottom: none;
 }
 .account-intro {
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.8;
   color: #706b5f;
   margin-top: 15px;
@@ -561,7 +561,7 @@ body {
   font-weight: 500;
 }
 .accordion-header .arrow {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   color: #8c8576;
 }
 .accordion-content {
@@ -592,7 +592,7 @@ body {
   border: 1px solid #c9c3b4;
   padding: 5px 12px;
   border-radius: 4px;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   color: #5e5a50;
   cursor: pointer;
 }
@@ -607,7 +607,7 @@ body {
   display: block;
   background-color: #1a2321;
   color: #a19c91;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   letter-spacing: 1px;
   text-align: center;
   margin-top: -2px;
