@@ -336,6 +336,7 @@ body {
 }
 .calendar-month {
   font-size: 1.35rem;
+  font-width: 400px;
   letter-spacing: 2px;
   color: #1a2321;
   margin-bottom: 30px;
