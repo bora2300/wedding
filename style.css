@@ -308,7 +308,7 @@ body {
   margin: 25px 0;
 }
 .invitation-text {
-  font-size: 1.0rem;
+  font-size: 1.05rem;
   font-width: 500rem;
 }
 .family-relations {
@@ -420,7 +420,7 @@ body {
 }
 .gallery-notice {
   margin-top: 20px;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: #9c978e;
 }
 /* 갤러리 확대 팝업 */
