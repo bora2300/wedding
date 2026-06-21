@@ -183,7 +183,7 @@ body {
   margin-bottom: 40px;
 }
 .wedding-title {
-  font-size: 0.5rem;
+  font-size: 0.95rem;
   letter-spacing: 5px;
   color: #8c826e;
   display: inline-block;
@@ -191,13 +191,14 @@ body {
 }
 .main-names {
   font-size: 1.85rem;
-  font-weight: 300;
+  font-weight: 400;
   color: #1a2321;
   letter-spacing: 2px;
   margin-bottom: 15px;
 }
 .main-date-place {
   font-size: 0.85rem;
+  font-weight: 400;
   color: #706b5f;
   letter-spacing: 0.5px;
 }
