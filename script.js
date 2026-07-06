@@ -180,3 +180,22 @@ window.addEventListener("load", function () {
     }, 300);
   }
 });
+
+function toggleGallery(){
+
+    const more=document.getElementById("more-gallery");
+    const text=document.getElementById("galleryText");
+
+    if(more.style.display==="grid"){
+
+        more.style.display="none";
+        text.innerHTML="사진 더 보기 ▼";
+
+    }else{
+
+        more.style.display="grid";
+        text.innerHTML="사진 접기 ▲";
+
+    }
+
+}
