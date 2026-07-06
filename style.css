@@ -405,9 +405,9 @@ body {
 }
 .gallery-item {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 3 / 4;
   overflow: hidden;
-  break-radius: 4px;
+  break-radius: 10px;
 }
 .gallery-item img {
   width: 100%;
