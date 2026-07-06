@@ -869,3 +869,14 @@ body {
 }
 
 
+.quote-photo{
+    width:100%;
+    margin:45px 0;
+    text-align:center;
+}
+
+.quote-photo img{
+    width:65%;
+    max-width:260px;
+    border-radius:12px;
+}
