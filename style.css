@@ -867,3 +867,17 @@ body {
   }
 
 }
+
+
+.more-gallery{
+    display:none;
+}
+
+.gallery-toggle{
+    text-align:center;
+    margin-top:20px;
+    color:#b79d73;
+    font-size:15px;
+    letter-spacing:1px;
+    cursor:pointer;
+}
