@@ -434,6 +434,15 @@ body {
   justify-content: center;
   align-items: center;
 }
+.modal-photo-wrap{
+    position: relative;
+    max-width: 90vw;
+    max-height: 78vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .modal-content{
     max-width: 90vw;
     max-height: 78vh;
@@ -446,9 +455,10 @@ body {
     user-select: none;
     -webkit-user-drag: none;
 }
+
 .modal-counter{
-    position: fixed;
-    bottom: 28px;
+    position: absolute;
+    bottom: 14px;
     left: 50%;
     transform: translateX(-50%);
     color: white;
