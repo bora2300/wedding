@@ -877,42 +877,32 @@ body {
     user-select: none;
 }
 
-.quote-photo{
-    width:100%;
-    margin:45px 0;
-    text-align:center;
-}
-
-.quote-photo img{
-    width:65%;
-    max-width:260px;
-    border-radius:12px;
-}
-
-
 .modal-prev,
 .modal-next{
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
-    width: 42px;
-    height: 42px;
+    width: 54px;
+    height: 54px;
     border: none;
     border-radius: 50%;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.28);
+    background-filter: blur(6px);
     color: white;
     font-size: 30px;
     font-weight: 300;
     cursor: pointer;
     z-index: 999999;
+    outline: none;
+    transition: all .2s;
 }
 
 .modal-prev{
-    left: 15px;
+    left:15px;
 }
 
 .modal-next{
-    right: 15px;
+    right:15px;
 }
 
 .modal-prev:hover,
@@ -920,42 +910,8 @@ body {
     background: rgba(255,255,255,0.3);
 }
 
-
-.modal-content{
-    -webkit-user-select: none;
-    user-select: none;
-    -webkit-user-drag: none;
-}
-
-.modal-counter{
-    position: fixed;
-    bottom: 28px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    font-size: 16px;
-    letter-spacing: 1px;
-    background: rgba(0,0,0,0.35);
-    padding: 6px 12px;
-    border-radius: 20px;
-    z-index: 999999;
-}
-
-.modal-prev,
-.modal-next,
-.modal-close{
-    touch-action: manipulation;
-    -webkit-tap-highlight-color: transparent;
-}
-
-.modal-prev,
-.modal-next{
-    -webkit-tap-highlight-color: transparent;
-    outline: none;
-}
-
 .modal-prev:active,
 .modal-next:active{
-    background: rgba(255,255,255,0.18);
-    transform: scale(0.96);
+    background: rgba(0,0,0,0.7);
+    transform: translateY(-50%) scale(0.96);
 }
