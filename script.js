@@ -198,28 +198,6 @@ function changePhoto(direction) {
         (currentIndex + 1) + " / " + galleryImages.length;
 }
 
-let startX = 0;
-
-const modal = document.getElementById("image-modal");
-
-modal.addEventListener("touchstart", function(e){
-    startX = e.touches[0].clientX;
-});
-
-modal.addEventListener("touchend", function(e){
-    const endX = e.changedTouches[0].clientX;
-    const diff = startX - endX;
-
-    if (Math.abs(diff) > 50) {
-        e.stopPropagation();
-
-        if (diff > 0) {
-            changePhoto(1);
-        } else {
-            changePhoto(-1);
-        }
-    }
-});
 
 function toggleAccordion(button) {
   const content = button.nextElementSibling;
