@@ -279,7 +279,10 @@ onclick="openModal(27)" onerror="this.parentNode.style.display='none';"></div>
 
     <button class="modal-prev" onclick="event.stopPropagation(); changePhoto(-1)">❮</button>
 
-    <img class="modal-content" id="modal-img" alt="확대 이미지" onclick="event.stopPropagation()">
+    <img class="modal-content"
+     id="modal-img"
+     alt="확대 이미지"
+     draggable="false">
 
     <button class="modal-next" onclick="event.stopPropagation(); changePhoto(1)">❯</button>
 </div>
