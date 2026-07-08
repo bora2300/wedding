@@ -157,15 +157,15 @@ const galleryImages = [
 ];
 
 function openModal(index) {
-
   currentIndex = index;
   
   const modal = document.getElementById("image-modal");
   const modalImg = document.getElementById("modal-img");
 
-  modalImg.src = src = galleryImages[currentIndex];
-
+  modalImg.src = galleryImages[currentIndex];
   modal.style.display = "flex";
+
+  document.body.style.overflow = "hidden";
 }
 
 function closeModal() {
