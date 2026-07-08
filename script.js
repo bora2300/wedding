@@ -163,7 +163,11 @@ function openModal(index) {
   const modalImg = document.getElementById("modal-img");
 
   modalImg.src = galleryImages[currentIndex];
-  modal.style.display = "flex";
+
+document.getElementById("modal-counter").innerText =
+    (currentIndex + 1) + " / " + galleryImages.length;
+
+modal.style.display = "flex";
 
   document.body.style.overflow = "hidden";
 }
@@ -187,8 +191,11 @@ function changePhoto(direction) {
     currentIndex = 0;
   }
 
-  document.getElementById("modal-img").src = galleryImages[currentIndex];
+  document.getElementById("modal-img").src =
+    galleryImages[currentIndex];
 
+document.getElementById("modal-counter").innerText =
+    (currentIndex + 1) + " / " + galleryImages.length;
 }
 
 let startX = 0;
