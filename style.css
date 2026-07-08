@@ -401,13 +401,14 @@ body {
   margin-top: 35px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 12px;
+  row-gap: 12px;
 }
 .gallery-item {
   width: 100%;
   aspect-ratio: 3 / 4;
   overflow: hidden;
-  break-radius: 10px;
+  break-radius: 12px;
 }
 .gallery-item img {
   width: 100%;
