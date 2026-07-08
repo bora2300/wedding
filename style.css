@@ -922,7 +922,6 @@ body {
 
 
 .modal-content{
-    touch-action: none;
     -webkit-user-select: none;
     user-select: none;
     -webkit-user-drag: none;
