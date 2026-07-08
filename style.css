@@ -947,3 +947,15 @@ body {
     touch-action: manipulation;
     -webkit-tap-highlight-color: transparent;
 }
+
+.modal-prev,
+.modal-next{
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+.modal-prev:active,
+.modal-next:active{
+    background: rgba(255,255,255,0.18);
+    transform: scale(0.96);
+}
