@@ -868,6 +868,13 @@ body {
 
 }
 
+.modal-prev,
+.modal-next,
+.modal-close{
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+}
 
 .quote-photo{
     width:100%;
