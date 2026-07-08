@@ -187,7 +187,27 @@ function changePhoto(direction) {
   }
 
   document.getElementById("modal-img").src = galleryImages[currentIndex];
+
 }
+
+let startX = 0;
+
+document.getElementById("modal-img").addEventListener("touchstart", function(e){
+    startX = e.touches[0].clientX;
+});
+
+document.getElementById("modal-img").addEventListener("touchend", function(e){
+    const endX = e.changedTouches[0].clientX;
+
+    if(startX - endX > 50){
+        changePhoto(1);   // 왼쪽으로 밀면 다음 사진
+    }
+
+    if(endX - startX > 50){
+        changePhoto(-1);  // 오른쪽으로 밀면 이전 사진
+    }
+
+});
 
 function toggleAccordion(button) {
   const content = button.nextElementSibling;
@@ -234,22 +254,4 @@ window.addEventListener("load", function () {
   }
 });
 
-let startX = 0;
 
-document.getElementById("modal-img").addEventListener("touchstart", function(e){
-    startX = e.touches[0].clientX;
-});
-
-document.getElementById("modal-img").addEventListener("touchend", function(e){
-
-    const endX = e.changedTouches[0].clientX;
-
-    if(startX - endX > 50){
-        changePhoto(1);   // 왼쪽으로 밀면 다음 사진
-    }
-
-    if(endX - startX > 50){
-        changePhoto(-1);  // 오른쪽으로 밀면 이전 사진
-    }
-
-});
