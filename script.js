@@ -172,6 +172,7 @@ function closeModal() {
   const modal = document.getElementById("image-modal");
   if (modal) {
     modal.style.display = "none";
+    document.body.style.overflow = "";
   }
 }
 
