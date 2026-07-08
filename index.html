@@ -276,19 +276,16 @@ onclick="openModal(27)" onerror="this.parentNode.style.display='none';"></div>
     </footer>
   </div>
   <div id="image-modal" class="modal" onclick="closeModal()">
-    <span class="modal-close" onclick="closeModal()">&times;</span>
+  <span class="modal-close" onclick="closeModal()">&times;</span>
 
-    <button class="modal-prev" onclick="event.stopPropagation(); changePhoto(-1)">❮</button>
+  <button class="modal-prev" onclick="event.preventDefault(); event.stopPropagation(); changePhoto(-1);">❮</button>
 
-    <img class="modal-content"
-     id="modal-img"
-     alt="확대 이미지"
-     draggable="false"
-     onclick="event.stopPropagation()">
-
+  <div class="modal-photo-wrap" onclick="event.stopPropagation()">
+    <img class="modal-content" id="modal-img" alt="확대 이미지" draggable="false">
     <div id="modal-counter" class="modal-counter"></div>
+  </div>
 
-    <button class="modal-next" onclick="event.stopPropagation(); changePhoto(1)">❯</button>
+  <button class="modal-next" onclick="event.preventDefault(); event.stopPropagation(); changePhoto(1);">❯</button>
 </div>
   
   <script src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
