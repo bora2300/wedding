@@ -192,21 +192,25 @@ function changePhoto(direction) {
 
 let startX = 0;
 
-document.getElementById("modal-img").addEventListener("touchstart", function(e){
+const modal = document.getElementById("image-modal");
+
+modal.addEventListener("touchstart", function(e){
     startX = e.touches[0].clientX;
 });
 
-document.getElementById("modal-img").addEventListener("touchend", function(e){
+modal.addEventListener("touchend", function(e){
     const endX = e.changedTouches[0].clientX;
+    const diff = startX - endX;
 
-    if(startX - endX > 50){
-        changePhoto(1);   // 왼쪽으로 밀면 다음 사진
+    if (Math.abs(diff) > 50) {
+        e.stopPropagation();
+
+        if (diff > 0) {
+            changePhoto(1);
+        } else {
+            changePhoto(-1);
+        }
     }
-
-    if(endX - startX > 50){
-        changePhoto(-1);  // 오른쪽으로 밀면 이전 사진
-    }
-
 });
 
 function toggleAccordion(button) {
