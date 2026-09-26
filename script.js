@@ -148,8 +148,7 @@ const galleryImages = [
   "images/photo23.jpg",
   "images/photo24.jpg",
   "images/photo25.jpg",
-  "images/photo27.jpg",
-  "images/photo28.jpg"
+  "images/photo27.jpg"
 ];
 
 function openModal(index) {
